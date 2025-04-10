@@ -64,7 +64,7 @@ function Events() {
             </div>
           ))
         ) : (
-          <h1 className="text-center">No events found</h1>
+          <h1 className="text-end mt-5 me-5">No events found</h1>
         )}
       </div>
     </div>
