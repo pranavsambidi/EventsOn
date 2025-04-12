@@ -37,7 +37,7 @@ function Schedule() {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:8080/events/add", {
+      const response = await fetch("https://eventson-backend.onrender.com/events/add", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

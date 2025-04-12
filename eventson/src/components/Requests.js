@@ -11,7 +11,7 @@ function Requests() {
 
   const fetchRequests = async () => {
     try {
-      const response = await fetch("http://localhost:8080/events/requests");
+      const response = await fetch("https://eventson-backend.onrender.com/events/requests");
       const data = await response.json();
       setRequests(data); // Store in state
     } catch (error) {
@@ -23,7 +23,7 @@ function Requests() {
   const updateStatus = async (id, status) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/events/update/${id}`,
+        `https://eventson-backend.onrender.com/events/update/${id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },

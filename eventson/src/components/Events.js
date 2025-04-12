@@ -6,7 +6,7 @@ function Events() {
   const [activeCategory, setActiveCategory] = useState("ongoing");
 
   useEffect(() => {
-    fetch("http://localhost:8080/events/events")
+    fetch("https://eventson-backend.onrender.com/events/events")
       .then((res) => res.json())
       .then((data) => {
         setEvents(data);
